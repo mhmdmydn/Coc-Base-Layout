@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LabelTextView">
+
+        <!--标签属性-->
+        <!--标签背景颜色-->
+        <attr name="labelBgColor" format="color"/>
+        <!--标签内容-->
+        <attr name="labelText" format="string"/>
+        <!--标签字体颜色-->
+        <attr name="labelTextColor" format="color"/>
+        <!--标签字体大小-->
+        <attr name="labelTextSize" format="dimension"/>
+        <!--标签宽度权重,起点为左上角-->
+        <attr name="labelWidthWeight" format="float"/>
+        <!--标签高度权重,起点为左上角-->
+        <attr name="labelHeightWeight" format="float"/>
+        <!--文字和底部间距-->
+        <attr name="labelTextPaddingBottom" format="dimension"/>
+        <!--文字和中点的间距-->
+        <attr name="labelTextPaddingCenter" format="dimension"/>
+
+        <!--圆角矩形-->
+        <!--矩形边界宽度-->
+        <attr name="roundRectBorderWidth" format="dimension"/>
+        <!--矩形四边半径-->
+        <attr name="roundRectRadius" format="dimension"/>
+    </declare-styleable>
+</resources>

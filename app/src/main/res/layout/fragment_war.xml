@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.townhall.TrophyFragment">
+
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        android:id="@+id/google_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        style="@style/GNowProgressBar"
+        android:indeterminate="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_data"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:scrollbarSize="@dimen/p5"
+            android:scrollbarThumbVertical="?attr/colorPrimary"
+            tools:listitem="@layout/list_base"
+            android:layoutAnimation="@anim/layout_anim_bottom" />
+
+    </RelativeLayout>
+
+</FrameLayout>

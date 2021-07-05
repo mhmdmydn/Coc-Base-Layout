@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_menu_war"
+        android:icon="@drawable/ic_war_icon"
+        android:title="@string/war" />
+
+    <item
+        android:id="@+id/nav_menu_trophy"
+        android:icon="@drawable/ic_trophy_icon"
+        android:title="@string/trophy" />
+
+    <item
+        android:id="@+id/nav_menu_farming"
+        android:icon="@drawable/ic_farming_icon"
+        android:title="@string/farming" />
+
+
+    <item
+        android:id="@+id/nav_menu_hybrid"
+        android:icon="@drawable/ic_hybrid_icon"
+        android:title="@string/hybrid" />
+</menu>

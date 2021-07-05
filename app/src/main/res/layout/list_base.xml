@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="@dimen/p4"
-    app:cardElevation="@dimen/cardview_default_elevation"
-    app:cardCornerRadius="@dimen/p8"
-    app:cardUseCompatPadding="true"
-    app:cardPreventCornerOverlap="true"
+    app:cardCornerRadius="@dimen/p4"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    style="@style/card_view_style">
 
     <RelativeLayout
+        style="@style/ripple_border"
         android:id="@+id/relative_Back"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -18,17 +16,56 @@
             android:id="@+id/image_thumb"
             android:layout_width="match_parent"
             android:layout_height="@dimen/h250"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/ic_launcher"/>
+            android:scaleType="centerCrop" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_title"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/image_thumb"
+            app:fontFamily="@font/roboto_light"
+            android:layout_alignBottom="@+id/image_thumb"
+            android:drawableLeft="@drawable/ic_home"
+            android:textAllCaps="true"
+            android:layout_margin="@dimen/p4"
+            android:padding="@dimen/p4"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_text_rounded_green"
             android:gravity="center"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-            android:text="@string/app_name"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:text="@string/town_hall"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/roboto_light"
+            android:layout_alignBottom="@+id/image_thumb"
+            android:layout_alignRight="@+id/image_thumb"
+            android:drawableLeft="@drawable/ic_type"
+            android:textAllCaps="true"
+            android:layout_margin="@dimen/p4"
+            android:padding="@dimen/p4"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_text_rounded_red"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:text="@string/town_hall"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_with_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/roboto_light"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_link"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:layout_margin="@dimen/p4"
+            android:padding="@dimen/p4"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_text_rounded_blue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:text="@string/without_link"/>
 
     </RelativeLayout>
 

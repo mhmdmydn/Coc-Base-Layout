@@ -1,3 +1,36 @@
 <resources>
-    <string name="app_name">Coc Base Layout</string>
+    <string name="app_name">DCocBase</string>
+    <string name="with_link">Link</string>
+    <string name="without_link">No Link</string>
+    <string name="town_hall">TH</string>
+    <string name="bh">BH</string>
+    <string name="hybrid">HYBRID</string>
+    <string name="farming">FARMING</string>
+    <string name="trophy">TROPHY</string>
+    <string name="war">WAR</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ghodel_dev">©ghodel_dev</string>
+    <string name="copy_layout_link">Copy Layout Link</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="town_halll">Town Hall</string>
+    <string name="builder_hall">Builder Hall</string>
+    <string name="cc_troops">*CC Troops</string>
+    <string name="description">Description</string>
+    <string name="draw_other_app_permission_denied">Aplikasi tidak mendapatkan izin. Aplikasi tidak akan berfungsi tanpa izin. Silakan coba lagi.</string>
+
+
+    <string name="id_ads">ca-app-pub-9576695952668383~5123090043</string>
+    <string name="banner_ads">ca-app-pub-9576695952668383/9581209801</string>
+    <string name="inter_ads">ca-app-pub-9576695952668383/9507141892</string>
+    <string name="reward_ads">ca-app-pub-9576695952668383/7884984757</string>
+    <string name="app_info">About</string>
+    <string name="share">Share App</string>
+    <string name="kontak">Kontak</string>
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="tutup">Tutup</string>
+    <string name="copyright">Copyright</string>
+
 </resources>

@@ -1,0 +1,33 @@
+{
+  "bases": [
+    {
+      "BuilderBase": {
+        "id": "119",
+        "image": "layout_119.jpg",
+        "layout_link": "https://link.clashofclans.com/en?action=OpenLayout&id=TH5%3ABB%3AAAAASgAAAAFae9NmKOFtvJAlTX84w87e",
+        "hall": "5",
+        "title": "BH5 for Jul",
+        "description": "",
+        "download": "63",
+        "view": "1471",
+        "like": "21",
+        "created": "1625019577",
+        "modified": "1625495413"
+      }
+    },{
+      "BuilderBase": {
+        "id": "119",
+        "image": "layout_119.jpg",
+        "layout_link": "https://link.clashofclans.com/en?action=OpenLayout&id=TH5%3ABB%3AAAAASgAAAAFae9NmKOFtvJAlTX84w87e",
+        "hall": "5",
+        "title": "BH5 for Jul",
+        "description": "",
+        "download": "63",
+        "view": "1471",
+        "like": "21",
+        "created": "1625019577",
+        "modified": "1625495413"
+      }
+    }
+  ]
+}

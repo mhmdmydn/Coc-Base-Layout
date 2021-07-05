@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PreviewActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_back_preview"
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h250"
+            android:layout_marginLeft="@dimen/p8"
+            android:layout_marginRight="@dimen/p8"
+            android:layout_marginTop="@dimen/cardview_default_elevation"
+            android:layout_marginBottom="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/p4"
+            style="@style/card_view_style">
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/image_thumb"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h250"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_reaction"
+            android:layout_below="@+id/card_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p8"
+            android:layout_marginRight="@dimen/p8"
+            android:layout_marginTop="@dimen/cardview_default_elevation"
+            android:layout_marginBottom="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/p4"
+            style="@style/card_view_style">
+
+            <LinearLayout
+                android:weightSum="3"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/back_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/p4"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:tint="@color/blue"
+                        android:src="@drawable/ic_like"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:fontFamily="@font/roboto_light"
+                        android:text="200"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/back_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/p4"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:tint="@color/green"
+                        android:src="@drawable/ic_download"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:fontFamily="@font/roboto_light"
+                        android:text="200"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/back_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/p4"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:tint="@color/red"
+                        android:src="@drawable/ic_view"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:fontFamily="@font/roboto_light"
+                        android:text="200"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_tips"
+            android:layout_below="@+id/card_reaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p8"
+            android:layout_marginRight="@dimen/p8"
+            android:layout_marginTop="@dimen/cardview_default_elevation"
+            android:layout_marginBottom="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/p4"
+            style="@style/card_view_style">
+
+            <RelativeLayout
+                android:id="@+id/lin_tips"
+                android:padding="@dimen/p8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cc_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:fontFamily="@font/roboto_light"
+                    android:textStyle="bold"
+                    android:text="@string/cc_troops"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cc_troops"
+                    android:layout_below="@id/tv_cc_title"
+                    app:fontFamily="@font/roboto_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:text="@string/description"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_ads"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h250"
+            android:layout_marginLeft="@dimen/p8"
+            android:layout_marginRight="@dimen/p8"
+            android:layout_marginTop="@dimen/cardview_default_elevation"
+            android:layout_marginBottom="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/p4"
+            android:layout_below="@id/card_tips"
+            style="@style/card_view_style">
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="MEDIUM_RECTANGLE"
+                ads:adUnitId="@string/banner_ads"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_open_coc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/copy_layout_link"
+            android:layout_marginLeft="@dimen/p8"
+            android:layout_marginRight="@dimen/p8"
+            android:layout_marginTop="@dimen/cardview_default_elevation"
+            android:layout_marginBottom="@dimen/cardview_default_elevation"
+            android:layout_below="@id/card_ads"
+            android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

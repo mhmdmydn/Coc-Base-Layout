@@ -7,4 +7,27 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF5722</color>
+    <color name="blue">#03A9F4</color>
+    <color name="green">#8BC34A</color>
+    <color name="color_transparent_soft_black">#7F000000</color>
+    <color name="light_gray">#EEEEEE</color>
+
+    <color name="colorPrimary">#FF7F50</color>
+    <color name="colorSecondary">#F7F7F7</color>
+    <color name="colorRippleEffect">#9E1C40</color>
+    <color name="colorPrimaryText">#FFFFFF</color>
+    <color name="colorSecondaryText">#EEEEEE</color>
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
 </resources>
